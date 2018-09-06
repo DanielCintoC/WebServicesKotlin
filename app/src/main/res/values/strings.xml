@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">WebServicesKotlin</string>
+    <string name="menu_change_city">Change city</string>
+</resources>
