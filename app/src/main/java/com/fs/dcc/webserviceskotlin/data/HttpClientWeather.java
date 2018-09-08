@@ -26,13 +26,13 @@ public class HttpClientWeather {
             connection.setDoInput(true);
             connection.connect();
 
-            StringBuffer stringBuffer = new StringBuffer();
+            StringBuilder stringBuffer = new StringBuilder();
             inputStream = connection.getInputStream();
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
             String line;
 
             while ((line = bufferedReader.readLine()) != null){
-                stringBuffer.append(line + "\r\n");
+                stringBuffer.append(line).append("\r\n");
             }
 
             inputStream.close();
